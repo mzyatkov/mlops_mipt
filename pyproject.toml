@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "mlops-mipt"
+version = "0.1.0"
+description = "MLOps MIPT course homework"
+authors = ["Михаил Зятьков <ziatkov.mv@phystech.edu>"]
+license = "MIT License"
+readme = "README.md"
+packages = [{include = "mlops_mipt"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
