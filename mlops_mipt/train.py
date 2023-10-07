@@ -302,6 +302,13 @@ class Flatten(nn.Module):
 
 
 if __name__ == "__main__":
+    # Installing dataset
+    print("Installing dataset:")
+    print("Downloading...")
+    os.system("wget -nc https://www.dropbox.com/s/gqdo90vhli893e0/data.zip -P datasets")
+    print("Unzipping...")
+    os.system("unzip -n datasets/data.zip")
+
     transformer = transforms.Compose(
         [
             transforms.Resize((SIZE_H, SIZE_W)),  # scaling images to fixed size

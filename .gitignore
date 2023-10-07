@@ -5,6 +5,7 @@
 
 datasets/*
 *.pt
+*.ckpt
 
 # User-specific files
 *.rsuser
