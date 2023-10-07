@@ -9,7 +9,16 @@ packages = [{include = "mlops_mipt"}]
 
 [tool.poetry.dependencies]
 python = "^3.11"
+torch = "^2.1.0+cpu"
+torchvision = "^0.16.0+cpu"
+torchsummary = "^1.5.1"
+tqdm = "^4.66.1"
+sklearn = "^0.0.post9"
+matplotlib = "^3.8.0"
 
+
+[tool.poetry.group.dev.dependencies]
+pre-commit = "^3.4.0"
 
 [build-system]
 requires = ["poetry-core"]
